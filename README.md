@@ -1,4 +1,4 @@
-# AuraBelle Petals 🌸
+# AuraBelle Petals 
 
 A beautiful, responsive website for a local flower farm showcasing fresh blooms, bouquet arrangements, and seasonal offerings. The site captures the essence of nature's beauty with elegant design and user-friendly navigation.
 
@@ -37,7 +37,7 @@ web_development_wk_8_project/
 
 ## Live Demo
 
-🌐 **[View Live Website]**
+🌐 **[View Live Website](https://aurabellepetals.netlify.app/)**
 
 
 ## How to Run Locally
