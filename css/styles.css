@@ -178,6 +178,7 @@ h1, h2 {
 /* About Page */
 .about {
   padding: 50px 30px;
+  text-align: center;
 }
 
 .about-container {
@@ -198,6 +199,7 @@ h1, h2 {
 
 .about-text {
   flex: 2;
+  text-align: center;
 }
 
 /* Optional Values Section */
@@ -213,6 +215,10 @@ h1, h2 {
   background: #fceef4;
   border-radius: 8px;
   text-align: center;
+}
+
+.values {
+    text-align: center;
 }
 
 /* Contact Page*/
@@ -290,4 +296,80 @@ footer {
   .hero h1 {
     font-size: 2rem;
   }
+}
+/* === FORM MESSAGE STYLES === */
+.form-message {
+  margin-top: 10px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+/* === NAV TOGGLE BUTTON FOR MOBILE === */
+.nav-toggle {
+  display: none; /* hidden on desktop */
+  font-size: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #333;
+  margin-right: 10px;
+}
+
+/* Show nav toggle only on small screens */
+@media (max-width: 768px) {
+  nav ul {
+    display: none; /* hide menu by default */
+    flex-direction: column;
+    gap: 10px;
+    background: #f8f8f8;
+    padding: 15px;
+    position: absolute;
+    top: 60px;
+    right: 10px;
+    width: 200px;
+    border-radius: 6px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  }
+
+  nav ul.show-nav {
+    display: flex; /* show when toggled */
+  }
+
+  .nav-toggle {
+    display: block; /* visible on mobile */
+  }
+}
+/* === LIGHTBOX STYLES === */
+#lightbox {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: none; /* hidden by default */
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+}
+
+#lightbox.active {
+  display: flex; /* show when active */
+}
+
+#lightbox img {
+  max-width: 90%;
+  max-height: 80%;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+#lightbox:after {
+  content: "✖";
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 28px;
+  color: #fff;
+  cursor: pointer;
 }
